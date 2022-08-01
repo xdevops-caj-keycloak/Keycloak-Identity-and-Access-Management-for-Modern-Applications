@@ -6,7 +6,7 @@
 - Realm: `myrealm`
 - Group: `mygroup`
 - Role: `myrole`
-- User: `john`
+- User: `john` (any users you like)
 
 ### Keyclok Client配置
 
@@ -20,7 +20,7 @@
 
 Ref:
 - https://stackoverflow.com/questions/59018604/keycloak-no-access-control-allow-origin-header-is-present-on-the-requested-r
-- https://keycloak.discourse.group/t/invalid-redirect-uri-but-redirect-uri-are-configured-in-client/10699
+
 
 ## User profile配置
 Attributes:
@@ -78,7 +78,7 @@ http://localhost:3000/
 
 2. click on the **Secured endpoint link**. Now you will see a message saying Access denied.
 
-myrole access denied ?
+When you click Invoke Service, the frontend sends an AJAX request to the backend service, including the access token in the request, which allows the backend to verify that the invocation is done on behalf of a user who has the required role to access the endpoint.
 
 ## Logout
 
