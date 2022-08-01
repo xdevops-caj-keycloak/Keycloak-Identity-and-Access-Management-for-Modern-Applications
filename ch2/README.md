@@ -45,7 +45,7 @@ npm start
 前端：
 http://localhost:8000/
 
-1. Login with previous created `john` user.
+1. **Login** with previous created `john` user.
 
 2. Show ID Token
 Let's take a look at the ID token that Keycloak issued. 
@@ -61,7 +61,7 @@ customize the contents within the tokens.
 4. Show picture in user profile
 参见上面的“User profile配置”
 
-5. Refresh Access Token
+5. **Refresh** Access Token
 
 ## 访问后端
 
@@ -78,7 +78,7 @@ http://localhost:3000/
 
 2. click on the **Secured endpoint link**. Now you will see a message saying Access denied.
 
-When you click Invoke Service, the frontend sends an AJAX request to the backend service, including the access token in the request, which allows the backend to verify that the invocation is done on behalf of a user who has the required role to access the endpoint.
+When you click **Invoke Service**, the frontend sends an AJAX request to the backend service, including the access token in the request, which allows the backend to verify that the invocation is done on behalf of a user who has the required role to access the endpoint.
 
 ## Logout
 
