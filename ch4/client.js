@@ -83,6 +83,16 @@ function loadTokens() {
                 setOutput('output-idtokenHeader', idTokenHeader);
                 setOutput('output-idtoken', idTokenBody);
                 setOutput('output-idtokenSignature', idTokenSignature);
+
+                // set access token output
+                var accessToken = response['access_token'].split('.');
+                var accessTokenHeader = JSON.parse(base64UrlDecode(accessToken[0]));
+                var accessTokenBody = JSON.parse(base64UrlDecode(accessToken[1]));
+                var accessTokenSignature = idToken[2];
+                setOutput('output-accesstokenHeader', accessTokenHeader);
+                setOutput('output-accesstoken', accessTokenBody);
+                setOutput('output-accesstokenSignature', accessTokenSignature);
+
                 setState('refreshToken', response['refresh_token']);
                 setState('idToken', response['id_token']);
                 setState('accessToken', response['access_token']);
@@ -123,6 +133,14 @@ function refreshTokens() {
                 setState('refreshToken', response['refresh_token']);
             } else {
                 setOutput('output-idtokenRefreshed', '');
+            }
+
+            // set access token output
+            if (response['access_token']) {
+                var idToken = JSON.parse(base64UrlDecode(response['access_token'].split('.')[1]));
+                setOutput('output-accesstokenRefreshed', idToken);
+            } else {
+                setOutput('output-accesstokenRefreshed', '');
             }
         }
     }

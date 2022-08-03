@@ -22,7 +22,7 @@
 <div id="step-discovery" style="display: none;">
     <h2>Discovery</h2>
     <p>
-        <label>Issuer</label><input id="input-issuer" value="http://localhost:8080/auth/realms/myrealm">
+        <label>Issuer</label><input id="input-issuer" value="http://localhost:8080/realms/myrealm">
     </p>
     <p>
         <button onclick="loadDiscovery()">Load OpenID Provider Configuration</button>
@@ -76,6 +76,16 @@
     <pre id="output-idtoken"></pre>
     Signature
     <pre id="output-idtokenSignature"></pre>
+
+    <h3>Access Token</h3>
+    Header
+    <pre id="output-accesstokenHeader"></pre>
+    Payload
+    <pre id="output-accesstoken"></pre>
+    Signature
+    <pre id="output-accesstokenSignature"></pre>
+
+
 </div>
 
 <div id="step-refresh" style="display: none;">
@@ -93,6 +103,9 @@
 
     <h3>ID Token</h3>
     <pre id="output-idtokenRefreshed"></pre>
+
+    <h3>Access Token</h3>
+    <pre id="output-accesstokenRefreshed"></pre>
 </div>
 
 <div id="step-userinfo" style="display: none;">

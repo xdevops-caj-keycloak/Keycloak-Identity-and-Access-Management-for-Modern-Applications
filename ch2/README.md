@@ -17,6 +17,10 @@
     - `http://localhost:8000/*` (登录成功后跳转的地址)
 - Web Origins: `+` (That adds all the Valid Redirect URIs that you defined above to the Web Origins headers.)
 
+### keycloak.json
+
+在Client详情页，点击Actions，选择Download adapter config，查看keycloak.json
+
 
 Ref:
 - https://stackoverflow.com/questions/59018604/keycloak-no-access-control-allow-origin-header-is-present-on-the-requested-r
