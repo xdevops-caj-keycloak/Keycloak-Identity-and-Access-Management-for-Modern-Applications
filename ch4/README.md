@@ -45,7 +45,7 @@ Keycloak supports the `authorization_code` grant type and the `code` and `token`
 
 ## 验证用户过程
 
-1. **⽤⼾**点击应⽤程序中的**登录（Login）**按钮。
+1. **⽤⼾**点击应⽤程序中的 **登录（Login）** 按钮。
 2. **应⽤程序**⽣成**认证请求 (authentication request)**。
 3. 认证请求以**302 重定向**的形式发送给⽤⼾，指⽰**⽤⼾代理**重定向到 Keycloak 提供的 **授权端点（authorization endpoint)** 。
 4. ⽤⼾代理通过认证请求使⽤应⽤程序指定的查询参数打开授权端点。
