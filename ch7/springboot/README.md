@@ -51,4 +51,5 @@ mvn spring-boot:run
 
 ## References
 
+- https://docs.spring.io/spring-security/reference/index.html
 - https://spring.io/guides/tutorials/spring-boot-oauth2/
