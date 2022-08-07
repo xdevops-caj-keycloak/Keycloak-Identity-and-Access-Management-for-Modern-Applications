@@ -132,7 +132,12 @@ References:
 - [Spring Security OAuth2 Login](https://docs.spring.io/spring-security/reference/servlet/oauth2/login/index.html#oauth2login)
 - https://docs.spring.io/spring-security-oauth2-boot/docs/current/reference/html5/
 
-到目前来看Spring有以下方式和Keycloak集成：
+到目前来看Spring有以下方式和Keycloak集成包括
+1. Spring提供的方式
 - spring-boot-starter-oauth2-client
 - spring-boot-starter-oauth2-resource-server
 - spring-security-oauth2-boot
+
+2. Keycloak提供的adatper方式
+- keycloak-spring-boot-starter
+- keycloak-spring-security-adapter
